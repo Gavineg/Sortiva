@@ -1,11 +1,15 @@
 [English](./README.md) | 简体中文
+# Sortiva
+
+[![Vanilla JS](https://img.shields.io/badge/vanilla-JS-f7df1e)](https://developer.mozilla.org/docs/Web/JavaScript)
+[![SheetJS](https://img.shields.io/badge/sheetjs-0.20-blue)](https://sheetjs.com/)
+[![Chart.js](https://img.shields.io/badge/chart.js-4.4-ff6384)](https://www.chartjs.org/)
+[![License](https://img.shields.io/badge/license-Apache%202.0-green)](./LICENSE)
 
 [![Sortiva logo](./icons/logo.svg)](https://github.com/Gavineg)
 
-# Sortiva
-
 > **Sortiva** — 基于遗传算法的均衡分组解决方案 — [快速开始](#section1) 
-
+---
 
 
 ## 简介

@@ -1,61 +1,56 @@
+English | [简体中文](./README_CN.md) 
 # Sortiva
 
-> 智能分组工具 — 基于遗传算法的均衡分组解决方案
+[![Vanilla JS](https://img.shields.io/badge/vanilla-JS-f7df1e)](https://developer.mozilla.org/docs/Web/JavaScript)
+[![SheetJS](https://img.shields.io/badge/sheetjs-0.20-blue)](https://sheetjs.com/)
+[![Chart.js](https://img.shields.io/badge/chart.js-4.4-ff6384)](https://www.chartjs.org/)
+[![License](https://img.shields.io/badge/license-Apache%202.0-green)](./LICENSE)
 
-## 简介-[快速开始](https://gavineg.github.io/Sortiva)
+[![Sortiva logo](./icons/logo.svg)](https://github.com/Gavineg)
 
-Sortiva 是一款面向教育场景的智能分组工具。上传学生成绩 Excel 文件后，系统会自动运用遗传算法、模拟退火或贪心算法，在多维度约束下寻找最优分组方案。
 
-## 功能特性
 
-- **多种算法** — 遗传算法（精确）、模拟退火（均衡）、贪心算法（极速）
-- **智能识别** — 自动识别 Excel 表头中的姓名、性别、科目列
-- **多维均衡** — 成绩均分、性别比例、科目多样性同时优化
-- **关系约束** — 支持"必须同组"、"不能同组"、"不能相邻"约束
-- **实时可视化** — 分组过程中实时展示收敛曲线
-- **拖拽微调** — 分组完成后可拖拽调整组员、组内排序、组序
-- **数据仪表盘** — 班级洞察、组间对比、科目热力图等
-- **一键导出** — 支持导出分组结果、分析报告、组内对比 Excel
-- **明暗主题** — 支持深色/浅色主题切换
-- **本地运行** — 所有数据在浏览器本地处理，不上传服务器
+> **Sortiva** — A Balanced Grouping Solution Based on Genetic Algorithms — [Quick Start](#section1)
+---
+## Introduction
+Sortiva is an intelligent grouping tool designed for educational scenarios.
+It creates balanced groups based on metrics such as **student grades and gender**.
+Powered by multiple algorithms, the system calculates the optimal grouping scheme under multi-dimensional constraints.
 
-## 快速开始
+## Features
+- **Intelligent Recognition** – Automatically identify and parse data from Excel spreadsheets
+- **Multi-dimensional Balancing** – Simultaneously optimize average grades, gender ratios and subject diversity across groups
+- **Relationship Constraints** – Support constraints including "must be in the same group" and "cannot be in the same group"
+- **Data Dashboard** – Class overview, cross-group comparison and comprehensive class analysis
+- **One-click Export** – Export grouping results and analytical reports
 
--[点我进入](https://gavineg.github.io/Sortiva)
+<a id="section1"></a>
+## Quick Start
+### Online Usage
+> ⚠️ Note: This link leads to a static webpage; no data will be uploaded to any server.
+- [Click to Access](https://gavineg.github.io/Sortiva)
 
-## 本地部署
-1. 拉取仓库，在仓库所在文件夹内运行终端，键入命令python -m http.server 8000（或者改成你想用的端口）
-2. 打开浏览器，进入localhost:8000/index.html
-3. 上传包含学生成绩的 Excel 文件
-4. 选择分组模式和参数
-5. 点击"开始分组"
-6. 查看结果，拖拽微调，导出报告
+### Local Deployment
+1. Clone the repository
+2. Open a terminal in the repository folder and run the following command:
+```bash
+python -m http.server [port]
+```
+3. Open your browser and visit:
+```
+localhost:[port]/index.html
+```
+4. Upload an Excel file **containing student grades (total score excluded) and gender** [Sample File](./Example_Score_Excel_CN.xlsx)
+5. Select grouping mode and configure parameters
+6. Click "Start Grouping"
+7. Review results, drag and drop for fine-tuning, then export reports
 
-## 技术栈
+### License
 
-- 纯前端，无需后端
-- ES Modules
-- Chart.js（图表可视化）
-- SheetJS（Excel 读写）
-- CSS 变量 + 动画系统
-- Canvas 粒子背景
+##### Apache License 2.0
 
-## 算法说明
+### Disclaimer
 
-| 算法 | 速度 | 精度 | 适用场景 |
-|------|------|------|----------|
-| 遗传算法 | 较慢 | 高 | 需要最优解 |
-| 模拟退火（待完善） | 中等 | 中高 | 平衡速度和质量 | 
-| 贪心算法（待完善） | 极快 | 中 | 快速预览 | 
-
-所有算法均支持早停机制 — 当连续多代无提升时自动停止。
-
-## 许可证
-
-Apache License 2.0
-
-## 免责声明
-
-本工具仅供辅助参考，分组结果不构成任何形式的评价或排名依据。使用者应根据实际情况对分组结果进行审核和调整。
-本工具不收集、存储或传输任何用户数据，所有计算均在本地浏览器中完成。
-开发者不对因使用本工具产生的任何直接或间接后果承担责任。
+This tool is for auxiliary reference only. Grouping results shall not be regarded as any form of evaluation or ranking standard. Users shall review and adjust grouping results according to actual circumstances.
+The tool does not collect, store or transmit any user data; all calculations are performed locally within your browser.
+The developer shall not be liable for any direct or indirect consequences arising from the use of this tool.
