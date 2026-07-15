@@ -5,10 +5,11 @@ export function normText(value) {
 export function toGender(value) {
     const raw = normText(value);
     if (!raw) return "未知";
+    const trimmed = raw.replace(/\s+/g, "").toLowerCase();
+    if (trimmed === "female" || trimmed === "f") return "女";
+    if (trimmed === "male" || trimmed === "m") return "男";
     const hit = raw[0];
     if (hit === "男" || hit === "女") return hit;
-    if (/male/i.test(raw)) return "男";
-    if (/female/i.test(raw)) return "女";
     return hit;
 }
 
